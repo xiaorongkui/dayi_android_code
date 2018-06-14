@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+
+              android:orientation="vertical">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y172"
+        android:src="@mipmap/lanucher_splash"/>
+
+    <LinearLayout
+        android:id="@+id/update_app_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_update_app_dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:text="撤销委托"
+            android:textColor="@color/color_black_2"
+            android:textSize="@dimen/text_size_18"/>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/x15"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_marginTop="@dimen/y20"
+            android:includeFontPadding="false"
+            android:text="将撤销此次挂单委托？"
+            android:textColor="@color/color_black_1"
+            android:textSize="@dimen/text_size_14"/>
+
+        <ProgressBar
+            android:id="@+id/update_prg_bar"
+            style="@style/progressBarHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/x15"
+            android:layout_marginStart="@dimen/x15"
+            android:layout_marginTop="@dimen/y26"
+            android:max="100"
+            android:maxHeight="@dimen/y3"
+            android:minHeight="@dimen/y3"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/update_bt_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/update_immediately_bt"
+                style="@style/btn_blue"
+                android:layout_marginEnd="@dimen/x15"
+                android:layout_marginStart="@dimen/x15"
+                android:layout_marginTop="@dimen/y26"
+                android:text="@string/update_app_immediately"/>
+
+            <Button
+                android:id="@+id/update_later_bt"
+                style="@style/btn_blue"
+                android:layout_marginBottom="@dimen/y15"
+                android:layout_marginEnd="@dimen/x15"
+                android:layout_marginStart="@dimen/x15"
+                android:layout_marginTop="@dimen/y15"
+                android:background="@null"
+                android:includeFontPadding="false"
+                android:text="@string/update_app_later"
+                android:textColor="@color/color_black_1"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/update_loading_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y15"
+            android:text="@string/update_app_loading"
+            android:textColor="@color/color_black_1"
+            android:textSize="@dimen/text_size_14"
+            android:layout_marginBottom="@dimen/y10"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

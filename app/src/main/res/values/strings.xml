@@ -1,0 +1,23 @@
+<resources>
+    <!--<string name="app_name">大易</string>-->
+    <string name="comfirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="net_connect_error">网络加载失败</string>
+    <string name="da_yi">大易</string>
+    <string name="upgrade_notice">发现新版本</string>
+    <string name="update_app_immediately">立即升级</string>
+    <string name="update_app_later">稍后升级</string>
+    <string name="update_app_loading">正在升级，请稍后</string>
+    <string name="click_exit">再按一次退出程序</string>
+    <string name="home">首页</string>
+    <string name="globalvillage">地球村</string>
+    <string name="community">社区</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="member">会员</string>
+    <string name="back">返回</string>
+    <string name="phone_num">手机号</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="register_now">立即注册</string>
+    <string name="forget_pwd">忘记密码</string>
+</resources>

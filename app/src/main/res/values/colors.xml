@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_black_1">#222222</color>
+    <color name="color_black_2">#666666</color>
+    <color name="color_black_3">#999999</color>
+
+    <color name="color_white_1">#FFFFFF</color>
+
+    <color name="color_bule_1">#29CC29</color>
+
+
+    <color name="color_red_1">#FF3333</color>
+
+    <color name="color_yellow_1">#FF8F33</color>
+
+    <color name="color_purple_1">#CD2985</color>
+
+    <color name="status_bar_color">@color/color_yellow_1</color>
+    <color name="item_line_1">#E6E6E6</color>
+    <color name="item_line_2">#C8C8C8</color>
+
+    <color name="activity_background">#F0F0F0</color>
+</resources>

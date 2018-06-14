@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/activity_background</item>
+    </style>
+
+    <style name="mainActivityTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseAppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="common_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@drawable/shape_dialog_bg_common</item><!--背景透明-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item><!-- 模糊 -->
+    </style>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/shape_loading_dialog</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="progressBarHorizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <!-- 这个属性就是配置进度的颜色和背景的颜色 -->
+        <item name="android:progressDrawable">@drawable/shape_update_app_progressbar_bg</item>
+        <item name="android:minHeight">@dimen/y2</item>
+        <item name="android:maxHeight">@dimen/y2</item>
+    </style>
+
+    <style name="btn" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/color_white_1</item>
+        <item name="android:layout_height">@dimen/y80</item>
+        <item name="android:textSize">@dimen/text_size_34</item>
+
+    </style>
+
+    <style name="btn_blue" parent="btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/shape_btn_bule</item>
+    </style>
+
+    <style name="btn_red" parent="btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/shape_btn_red</item>
+    </style>
+    <!--防止白屏-->
+    <style name="start_apptheme" parent="BaseAppTheme">
+        <item name="android:windowBackground">@mipmap/lanucher_splash</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>
