@@ -1,6 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_white_1"
+              android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <com.mall.dayi.ui.widget.AutoHeighBanner
+        android:id="@+id/home_auto_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y169"/>
+
+    <com.mall.dayi.ui.widget.FullGridView
+        android:id="@+id/home_program_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y35"
+        android:layout_marginTop="@dimen/y35"
+        android:background="@color/color_white_1"
+        android:clickable="false"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:scrollbars="horizontal"/>
+
+    <FrameLayout
+        android:id="@+id/upMarqueeView_fl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:layout_marginTop="@dimen/y10">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_home_marquee_bg"/>
+
+        <com.mall.dayi.ui.widget.UPMarqueeView
+            android:id="@+id/marquee_home_header_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/x15"
+        android:layout_marginTop="@dimen/y10"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/x5"
+            android:layout_height="@dimen/y30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/x15"
+            android:background="@color/color_red_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x10"
+            android:text="@string/dayi_selected"
+            android:textColor="@color/color_black_1"
+            android:textSize="@dimen/text_size_30"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x1"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/x15"
+            android:layout_marginStart="@dimen/x10"
+            android:gravity="bottom"
+            android:text="@string/more_selected"
+            android:textColor="@color/color_black_1"
+            android:textSize="@dimen/text_size_20"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_dayi_selected_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/x15"
+        android:layout_marginStart="@dimen/x15"
+        android:overScrollMode="never"
+        android:scrollbars="none"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginTop="@dimen/y10"
+        android:background="@color/item_line_1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/x15"
+        android:layout_marginTop="@dimen/y30"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/x5"
+            android:layout_height="@dimen/y30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/x15"
+            android:background="@color/color_red_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x10"
+            android:text="@string/recommended_for_you"
+            android:textColor="@color/color_black_1"
+            android:textSize="@dimen/text_size_30"/>
+    </LinearLayout>
+
+    <com.mall.dayi.ui.widget.AutoHeighBanner
+        android:id="@+id/recommended_for_you_ahb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y169"
+        android:layout_marginEnd="@dimen/x15"
+        android:layout_marginStart="@dimen/x15"
+        android:layout_marginTop="@dimen/y15"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/x15"
+        android:layout_marginTop="@dimen/y30"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/x5"
+            android:layout_height="@dimen/y30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/x15"
+            android:background="@color/color_red_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x10"
+            android:text="@string/hot_business"
+            android:textColor="@color/color_black_1"
+            android:textSize="@dimen/text_size_30"/>
+    </LinearLayout>
+
+    <com.mall.dayi.ui.widget.FullGridView
+        android:id="@+id/home_hot_business_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y5"
+        android:background="@color/color_white_1"
+        android:clickable="false"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:scrollbars="horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y15"
+        android:text="@string/gone_end"
+        android:textSize="@dimen/text_size_20"/>
+</LinearLayout>

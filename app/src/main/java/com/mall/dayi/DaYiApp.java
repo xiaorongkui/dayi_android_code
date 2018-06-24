@@ -100,7 +100,6 @@ public class DaYiApp extends Application {
     @Override
     public void onTerminate() {
         super.onTerminate();
-
         Observable.create(e -> Glide.get(context).clearDiskCache()).subscribeOn(Schedulers.io()).subscribeOn
                 (AndroidSchedulers.mainThread()).subscribe(o -> Glide.get(context).clearMemory());
     }

@@ -20,4 +20,9 @@
     <string name="login">登录</string>
     <string name="register_now">立即注册</string>
     <string name="forget_pwd">忘记密码</string>
+    <string name="dayi_selected">大易精选</string>
+    <string name="more_selected">更多精选</string>
+    <string name="recommended_for_you">为你推荐</string>
+    <string name="hot_business">热门商家</string>
+    <string name="gone_end">已经到底了</string>
 </resources>
