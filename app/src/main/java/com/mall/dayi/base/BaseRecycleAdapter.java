@@ -91,8 +91,7 @@ public abstract class BaseRecycleAdapter<T> extends BaseQuickAdapter<T, BaseRecy
 
     @Override
     protected BaseRecyclerViewHolder createBaseViewHolder(View view) {
-        BaseRecyclerViewHolder baseViewHolder = super.createBaseViewHolder(view);
-        return baseViewHolder;
+        return super.createBaseViewHolder(view);
     }
 
     @Override
